@@ -22,7 +22,7 @@ url     : # the base hostname & protocol for your site e.g. https://www.someone.
 baseurl : # does not include hostname
 title   : shengqiang's blog
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  A website with awesome stories.
 
 
 ## => Language and Timezone
@@ -225,4 +225,4 @@ plugins:
   - jemoji # https://www.webfx.com/tools/emoji-cheat-sheet/
 
 ## => Theme
-theme: jekyll-text-theme
+# theme: jekyll-text-theme
