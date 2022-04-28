@@ -222,7 +222,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-  - jemoji
+  - jemoji # https://www.webfx.com/tools/emoji-cheat-sheet/
 
 ## => Theme
 theme: jekyll-text-theme
