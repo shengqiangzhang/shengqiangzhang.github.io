@@ -1,14 +1,8 @@
 ---
-layout:     post
+layout:     article
 title:      selenium跳过webdriver检测并爬取淘宝我已购买的宝贝数据
-subtitle:   python 学习笔记
-date:       2019-03-14
-author:     Shengqiang Zhang
-header-img: img/post-bg-coffee.jpeg
-catalog: true
 tags:
-    - python
-    - 爬虫
+    - Python
 ---
 
 

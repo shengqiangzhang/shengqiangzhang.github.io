@@ -1,15 +1,8 @@
 ---
-layout:     post
-title:      在Drcom下使用路由器上校园网WIFI
-subtitle:   以广东工业大学、极路由1S HC5661A、OpenWrt为例
-date:       2019-02-20
-author:     Shengqiang Zhang
-header-img: img/post-bg-coffee.jpeg
-catalog: true
+layout:     article
+title:      在Drcom下使用路由器上校园网WiFi
 tags:
-    - Drcom
     - OpenWrt
-    - Linux
 ---
 
 > 免责声明：

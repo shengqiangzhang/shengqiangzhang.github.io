@@ -1,13 +1,8 @@
 ---
-layout:     post
+layout:     article
 title:      2019-07-24 Laplacian matrix(拉普拉斯矩阵)
-subtitle:   测试
-date:       2019-07-27
-author:     Shengqiang Zhang
-header-img: img/post-bg-coffee.jpeg
-catalog: true
 tags:
-    - 深度学习
+    - Deep Learning
 ---
 
 

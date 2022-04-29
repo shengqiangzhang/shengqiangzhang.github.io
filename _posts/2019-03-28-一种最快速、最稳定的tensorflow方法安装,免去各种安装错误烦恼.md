@@ -1,13 +1,9 @@
 ---
-layout:     post
+layout:     article
 title:      一种最快速、最稳定的tensorflow方法安装,免去各种安装错误烦恼
-subtitle:   跳过一些常见的坑
-date:       2019-03-28
-author:     Shengqiang Zhang
-header-img: img/post-bg-coffee.jpeg
-catalog: true
 tags:
-    - python
+    - Python
+    - Tensorflow
 ---
 
 ##  一些常见的坑

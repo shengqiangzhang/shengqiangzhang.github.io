@@ -1,15 +1,8 @@
 ---
-layout:     post
+layout:     article
 title:      基于python tkinter的豆瓣电影助手
-subtitle:   python tkinter学习笔记
-date:       2019-02-22
-author:     Shengqiang Zhang
-header-img: img/post-bg-coffee.jpeg
-catalog: true
 tags:
-    - python
-    - tkinter
-    - 爬虫
+    - Python
 ---
 
 

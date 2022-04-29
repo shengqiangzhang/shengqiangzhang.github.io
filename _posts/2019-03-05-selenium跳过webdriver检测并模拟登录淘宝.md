@@ -1,14 +1,8 @@
 ---
-layout:     post
+layout:     article
 title:      selenium跳过webdriver检测并模拟登录淘宝
-subtitle:   python 学习笔记
-date:       2019-03-05
-author:     Shengqiang Zhang
-header-img: img/post-bg-coffee.jpeg
-catalog: true
 tags:
-    - python
-    - 爬虫
+    - Python
 ---
 
 # 简介
