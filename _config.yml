@@ -37,7 +37,7 @@ author:
   type      : # "person" (default), "organization"
   name      : Shengqiang
   url       :
-  avatar    :
+  avatar    : avatar.jpg
   bio       : I am an amazing person.
   email     : sqzhang77@gmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
