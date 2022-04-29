@@ -1,4 +1,5 @@
 ---
+mathjax: false
 layout:     article
 title:      conda activate激活环境出错的解决办法
 tags:
@@ -9,12 +10,12 @@ tags:
 # 出现错误情况
 今天在实用Anaconda激活python3.6环境的时候出现了如下错误：
 ```python
-[zsq@localhost ~]\$ conda activate python36
+[zsq@localhost ~]$ conda activate python36
 
 CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
 To initialize your shell, run
 
-    \$ conda init <SHELL_NAME>
+    $ conda init <SHELL_NAME>
 
 Currently supported shells are:
   - bash
