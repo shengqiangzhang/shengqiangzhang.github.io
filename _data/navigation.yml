@@ -1,4 +1,7 @@
 header:
+  - title: 博客
+    url: /
+
   - titles:
       # @start locale config
       en      : &EN       Archive
