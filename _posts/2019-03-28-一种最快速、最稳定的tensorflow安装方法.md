@@ -1,6 +1,6 @@
 ---
-layout:     article
-title:      一种最快速、最稳定的tensorflow方法安装,免去各种安装错误烦恼
+layout: article
+title: 一种最快速、最稳定的tensorflow安装方法
 tags:
     - Python
     - Tensorflow

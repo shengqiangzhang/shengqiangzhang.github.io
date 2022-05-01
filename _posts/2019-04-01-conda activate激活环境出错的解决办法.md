@@ -1,7 +1,8 @@
 ---
 mathjax: false
-layout:     article
-title:      conda activate激活环境出错的解决办法
+mathjax_autoNumber: false
+layout: article
+title: conda activate激活环境出错的解决办法
 tags:
     - Python
     - Conda
