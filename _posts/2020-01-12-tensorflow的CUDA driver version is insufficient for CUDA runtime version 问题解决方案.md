@@ -1,6 +1,8 @@
 --- 
 layout: article
 title: tensorflow的CUDA driver version is insufficient for CUDA runtime version 问题解决方案
+tags:
+    - Deep Learning
 ---
 
 CUDA driver version is insufficient for CUDA runtime version 翻译过来就是CUDA的驱动程序版本跟CUDA的运行时版本不匹配

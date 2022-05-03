@@ -1,11 +1,13 @@
 ---
 layout: article
 title: tf.variable_scope和tf.name_scope的区别
+tags:
+    - Deep Learning
 ---
 
-1.  tf.variable\_scope可以让变量有相同的命名，包括tf.get\_variable得到的变量，还有tf.Variable的变量
+1.  tf.variable_scope可以让变量有相同的命名，包括tf.get_variable得到的变量，还有tf.Variable的变量
 
-2.  tf.name\_scope可以让变量有相同的命名，只是限于tf.Variable的变量
+2.  tf.name_scope可以让变量有相同的命名，只是限于tf.Variable的变量
 
 ```bash
 import tensorflow as tf; 

@@ -1,6 +1,8 @@
 ---
 layout: article
 title: 配置Jupyter Notebook远程访问(Linux、Windows、mac OSX通用)
+tags:
+    - Deep Learning
 ---
 
 1.  执行以下命令:

@@ -1,6 +1,8 @@
 ---
 layout: article
 title: Embedding的理解
+tags:
+    - Deep Learning
 ---
 
 Embedding 是一个将离散变量转为连续向量表示的一个方式。在神经网络中，embedding 是非常有用的，因为它不光可以减少离散变量的空间维数，同时还可以有意义的表示该变量。

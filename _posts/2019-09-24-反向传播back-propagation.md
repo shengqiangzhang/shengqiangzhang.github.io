@@ -1,6 +1,8 @@
 ---
 layout: article
 title: 反向传播(Back Propagation)
+tags:
+    - Deep Learning
 ---
 
 ## 什么是BP算法

@@ -1,6 +1,8 @@
 ---
 layout: article
 title: 为Jupyter Notebook配置多个python版本
+tags:
+    - Deep Learning
 ---
 
 在实用Anaconda过程中，默认为安装python2或者python3，而使用jupyter notebook时，默认只有一个python版本，为了能够方便随时切换python版本，可以为jupyter notebook安装多个python内核。

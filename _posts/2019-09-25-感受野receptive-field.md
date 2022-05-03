@@ -1,6 +1,8 @@
 ---
 layout: article
 title: 感受野(receptive field)
+tags:
+    - Deep Learning
 ---
 
 根据以下网友的博客整理而成，感觉写得不错，就没必要自己重新写一遍了￣□￣｜｜  

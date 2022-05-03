@@ -1,6 +1,8 @@
 ---
 layout: article
 title: epoch、iteration、batch_size的区别
+tags:
+    - Deep Learning
 ---
 
 ## epoch
@@ -22,4 +24,4 @@ title: epoch、iteration、batch_size的区别
 例如：有49000个数据，计划进行十轮训练，那么epoch=10；一次训练迭代训练100个数据，batchsize=100，训练一轮总共要迭代490次（49000/100=490）。总的iteration=490\*10=4900次。
 
 具体的计算公式为：  
-one epoch = numbers of iterations = N = 训练样本的数量/batch\_size
+one epoch = numbers of iterations = N = 训练样本的数量/batch_size

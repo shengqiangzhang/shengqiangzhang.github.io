@@ -1,7 +1,8 @@
 ---
 layout: article
 title: tensorflow与numpy的版本兼容性问题
-author: Shengqiang
+tags:
+    - Deep Learning
 ---
 
 ## 出现问题

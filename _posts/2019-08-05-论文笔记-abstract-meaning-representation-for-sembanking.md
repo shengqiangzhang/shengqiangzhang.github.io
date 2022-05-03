@@ -1,6 +1,8 @@
 ---
 layout: article
 title: '论文笔记: Abstract Meaning Representation for Sembanking'
+tags:
+    - Deep Learning
 ---
 
 论文链接：<https://amr.isi.edu/a.pdf>

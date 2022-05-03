@@ -1,6 +1,8 @@
 ---
 layout: article
 title: '论文笔记: Learning to Represent Programs with Graphs'
+tags:
+    - Deep Learning
 ---
 
 ![](http://39.106.118.77/wp-content/uploads/2019/10/93c52a7a8ec3e01b70ed2e5c9750ff18.png)

@@ -1,6 +1,8 @@
 ---
 layout: article
 title: '论文笔记: Graph Attention Networks'
+tags:
+    - Deep Learning
 ---
 
 # Abstract
@@ -39,15 +41,15 @@ title: '论文笔记: Graph Attention Networks'
 
 为了得到充分表达能力，将输入特征转换为高层特征，至少我们需要一个可学习的线性转换（one learnable linear transformation）。为了达到该目标，在初始步骤，一个共享的线性转换，参数化为 weight matrix，\$W ∈ R\^\{F' \\times F\}\$，应用到每一个节点上。我们然后在每一个节点上，进行 self-attention \--- a shared attentional mechanism α：\$R\^\{F'\} \\times R\^\{F'\} → R\$，计算 attention coefficients:
 
-\$\$ e\_\{ij\} = α\(W \\vec\{h\}_\{i\}, W \\vec\{h\}_\{j\}\)\$\$
+\$\$ e_\{ij\} = α\(W \\vec\{h\}_\{i\}, W \\vec\{h\}_\{j\}\)\$\$
 
 为了使得这些系数能够适用于不同的节点，我们用softmax function对所有邻居结点j进行归一化：
 
-\$\$ α_\{ij\} = \\frac\{ exp\( \\vec\{e\}_\{ij\}\) \}\{ \\sum\_\{k∈N\_i\}\{exp\( \\vec\{e\}\_\{ik\}\)\} \}\$\$
+\$\$ α_\{ij\} = \\frac\{ exp\( \\vec\{e\}_\{ij\}\) \}\{ \\sum_\{k∈N_i\}\{exp\( \\vec\{e\}_\{ik\}\)\} \}\$\$
 
 在我们的实验当中，该 attention 机制 α 是一个 single-layer feedforward neural network，参数化为权重向量\$ \\vec\{a\} ∈ R\^\{ 2\{F'\} \}\$，对其全部展开，用 attention 机制算出来的系数，可以表达为：
 
-\$\$ α_\{ij\} = \\frac\{ exp\( LeakyReLU \(\\vec\{a\}\^\{T\} \[ W \\vec\{h\}_\{i\} || W \\vec\{h\}_\{j\} \]\) \) \}\{ \\sum_\{k∈N\_i\}\{exp\( LeakyReLU \(\\vec\{a\}\^\{T\} \[ W \\vec\{h\}_\{i\} || W \\vec\{h\}_\{k\} \]\) \)\} \}\$\$
+\$\$ α_\{ij\} = \\frac\{ exp\( LeakyReLU \(\\vec\{a\}\^\{T\} \[ W \\vec\{h\}_\{i\} || W \\vec\{h\}_\{j\} \]\) \) \}\{ \\sum_\{k∈N_i\}\{exp\( LeakyReLU \(\\vec\{a\}\^\{T\} \[ W \\vec\{h\}_\{i\} || W \\vec\{h\}_\{k\} \]\) \)\} \}\$\$
 
 可以得到最终的每个节点的输出向量：  
 ![](http://39.106.118.77/wp-content/uploads/2019/09/2d82440bc2690de1a3b01aad86bf3c6c.png)
