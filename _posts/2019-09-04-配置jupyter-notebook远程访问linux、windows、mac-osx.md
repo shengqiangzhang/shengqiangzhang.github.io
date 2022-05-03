@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: 配置Jupyter Notebook远程访问(Linux、Windows、mac OSX通用)
 ---
 

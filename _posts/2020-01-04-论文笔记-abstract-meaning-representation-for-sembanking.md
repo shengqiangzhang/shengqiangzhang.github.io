@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: '笔记: Abstract Meaning Representation for Sembanking'
 ---
 

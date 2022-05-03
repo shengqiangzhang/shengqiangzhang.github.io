@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: 反向传播(Back Propagation)
 ---
 

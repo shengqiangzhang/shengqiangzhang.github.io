@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: tf.variable_scope和tf.name_scope的区别
 ---
 

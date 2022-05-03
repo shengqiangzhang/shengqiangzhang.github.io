@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: tensorflow与numpy的版本兼容性问题
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: '笔记: Graph Attention Networks'
 ---
 

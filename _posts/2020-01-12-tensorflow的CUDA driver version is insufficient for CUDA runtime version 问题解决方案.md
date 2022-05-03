@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: article
 title: tensorflow的CUDA driver version is insufficient for CUDA runtime version 问题解决方案
 ---
 

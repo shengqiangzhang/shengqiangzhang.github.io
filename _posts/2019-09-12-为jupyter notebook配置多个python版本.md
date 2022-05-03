@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: 为Jupyter Notebook配置多个python版本
 ---
 

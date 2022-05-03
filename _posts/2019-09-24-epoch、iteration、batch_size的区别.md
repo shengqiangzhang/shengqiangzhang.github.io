@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: epoch、iteration、batch_size的区别
 ---
 

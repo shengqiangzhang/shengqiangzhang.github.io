@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: 感受野(receptive field)
 ---
 

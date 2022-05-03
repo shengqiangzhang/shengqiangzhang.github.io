@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: '论文笔记: Learning to Represent Programs with Graphs'
 ---
 
