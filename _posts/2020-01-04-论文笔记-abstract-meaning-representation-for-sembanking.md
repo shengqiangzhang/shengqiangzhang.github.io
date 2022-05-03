@@ -1,6 +1,6 @@
 ---
 layout: article
-title: '笔记: Abstract Meaning Representation for Sembanking'
+title: '论文笔记: Abstract Meaning Representation for Sembanking'
 ---
 
 ## Abstract

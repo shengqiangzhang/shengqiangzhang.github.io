@@ -1,6 +1,6 @@
 ---
 layout: article
-title: '笔记: Graph Attention Networks'
+title: '论文笔记: Graph Attention Networks'
 ---
 
 # Abstract
