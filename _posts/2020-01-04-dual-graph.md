@@ -1,4 +1,6 @@
 ---
+mathjax: true
+mathjax_autoNumber: true
 layout: article
 title: dual graph对偶图
 tags:

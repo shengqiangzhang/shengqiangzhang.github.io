@@ -1,4 +1,6 @@
 ---
+mathjax: true
+mathjax_autoNumber: true
 layout: article
 title: '论文笔记: Abstract Meaning Representation for Sembanking'
 tags:
