@@ -1,6 +1,7 @@
 ---
 layout: article
 title: tensorflow与numpy的版本兼容性问题
+author: Shengqiang
 ---
 
 ## 出现问题
