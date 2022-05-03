@@ -28,7 +28,7 @@ tags:
 ## AMR Content
 
 1.  "b / boy" 表示用一个实例b来表示概念boy
-2.  “\(d / die-01 :location \(p / park\)\)” means there was a death \(d\) in the park \(p\)
+2.  “(d / die-01 :location (p / park))” means there was a death (d) in the park (p)
 3.  AMR uses approximately 100 relations:
     * Frame arguments, following PropBank con- ventions. :arg0, :arg1, :arg2, :arg3, :arg4, :arg5.
     * General semantic relations. :accompanier, :age, :beneficiary, :cause, :compared- to, :concession, :condition, :consist-of, :de- gree, :destination, :direction, :domain, :dura- tion, :employed-by, :example, :extent, :fre- quency, :instrument, :li, :location, :manner, :medium, :mod, :mode, :name, :part, :path, :po- larity, :poss, :purpose, :source, :subevent, :sub- set, :time, :topic, :value.
@@ -44,7 +44,7 @@ tags:
 
 在阅读例子之前，读者可以参考AMR阅读指南。
 
-1.  Frame arguments. For example, the frameset “describe-01” has three pre-defined slots \(:arg0 is the describer, :arg1 is the thing described, and :arg2 is what it is being described as\).  
+1.  Frame arguments. For example, the frameset “describe-01” has three pre-defined slots (:arg0 is the describer, :arg1 is the thing described, and :arg2 is what it is being described as).  
     ![](http://39.106.118.77/wp-content/uploads/2020/01/d3f0b04cfc7bfd84fe0310cf10cdd815.png)
 2.  General semantic relations. AMR also includes many non-core relations, such as :beneficiary, :time, and :destination.  
     ![](http://39.106.118.77/wp-content/uploads/2020/01/5738ee2854383ae66387b82c8338fd0a.png)
@@ -69,7 +69,7 @@ tags:
 
 1.  AMR不代表屈折形态学的时态和数字，它省略冠词。这加快了注释的过程。我们没有针对这些现象的良好语义目标表示。一个轻量级的语法样式表示可以通过一个自动的后处理分层。
 2.  AMR没有通用量词。 诸如“全部”之类的词会修饰其头部概念。 AMR不会区分真实事件和假设事件，未来事件或想象的事件。 例如，在“男孩想去”中，即使“ go-01”可能发生也可能不发生，“ want-01”和“ go-01”的实例具有相同的状态。
-3.  We represent “history teacher” nicely as “\(p / per- son :arg0-of \(t / teach-01 :arg1 \(h / history\)\)\)”. How- ever, “history professor” becomes “\(p / professor :mod \(h / history\)\)”, because “profess-01” is not an appropriate frame. It would be reasonable in such cases to use a NomBank \(Meyers et al., 2004\) noun frame with appropriate slots.
+3.  We represent “history teacher” nicely as “(p / per- son :arg0-of (t / teach-01 :arg1 (h / history)))”. How- ever, “history professor” becomes “(p / professor :mod (h / history))”, because “profess-01” is not an appropriate frame. It would be reasonable in such cases to use a NomBank (Meyers et al., 2004) noun frame with appropriate slots.
 
 ## Creating AMRs
 
@@ -80,18 +80,18 @@ tags:
 当前，这篇论文有一个由数千个句子组成的手动构建的**AMR库**，其中的一个子集可以免费下载，其余的则通过LDC目录分发。  
 在最初开发AMR时，作者建立了以下AMR：  
 \+ 225 short sentences for tutorial purposes  
-\+ 142 sentences of newswire \(_\)  
-\+ 100 sentences of web data \(_\)
+\+ 142 sentences of newswire (_)  
+\+ 100 sentences of web data (_)
 
 而LDC 提供以下AMR:
 
 * 1546 sentences from the novel “The Little Prince”
 * 1328 sentences of web data
-* 1110 sentences of web data \(\*\)
-* 926 sentences from Xinhua news \(\*\)
-* 214 sentences from CCTV broadcast conversation \(\*\)
+* 1110 sentences of web data (\*)
+* 926 sentences from Xinhua news (\*)
+* 214 sentences from CCTV broadcast conversation (\*)
 
-Collections marked with a star \(\*\) are also in the OntoNotes corpus
+Collections marked with a star (\*) are also in the OntoNotes corpus
 
 ## Relate Work
 

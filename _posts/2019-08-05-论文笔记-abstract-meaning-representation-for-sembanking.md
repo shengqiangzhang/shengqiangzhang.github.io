@@ -9,8 +9,8 @@ tags:
 
 # 定义
 
-1.  与传统树形结构不同，采用单根 有向无环图\(single root,DAG graph\)结构；
-2.  忽略虚词、介词等，忽略词的形态变化\(如复数、过去时等\)；
+1.  与传统树形结构不同，采用单根 有向无环图(single root,DAG graph)结构；
+2.  忽略虚词、介词等，忽略词的形态变化(如复数、过去时等)；
 
 3.  在这个DAG图中，叶子结点表示概念，非叶子结点表示虚结点，虚结点到虚结点的边表示概念之间的关系，虚结点到叶子结点表示实例化的过程。
 
@@ -47,6 +47,6 @@ w / want-01
 ### logic format
 
 根据graph format，可轻易得出logic format：  
-\$\$  
-\{\\exists\}w, b, g: instance\(w, want-01\) ∧ instance\(b, boy\) ∧ instance\(g, go-01\) ∧ arg0\(w,b\) ∧ arg1\(w,g\) ∧ arg0\(g,b\)  
-\$\$
+$$  
+{\exists}w, b, g: instance(w, want-01) ∧ instance(b, boy) ∧ instance(g, go-01) ∧ arg0(w,b) ∧ arg1(w,g) ∧ arg0(g,b)  
+$$

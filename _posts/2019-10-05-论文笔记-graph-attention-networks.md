@@ -7,7 +7,7 @@ tags:
 
 # Abstract
 
-本文提出一种新颖的 graph attention networks \(GATs\), 可以处理 graph 结构的数据，利用 masked self-attentional layers 来解决基于 graph convolutions 以及他们的预测 的前人方法（prior methods）的不足。
+本文提出一种新颖的 graph attention networks (GATs), 可以处理 graph 结构的数据，利用 masked self-attentional layers 来解决基于 graph convolutions 以及他们的预测 的前人方法（prior methods）的不足。
 
 **对象**: graph-structured data.
 
@@ -21,7 +21,7 @@ tags:
 
 # Introduction
 
-图神经网络网络（GNN）首次出现于 Gori 等人（2005）与 Scarselli 等人（2009）的论文，把它作为递归神经网络的泛化形式，能够直接处理更普遍的图类，比如循环图、有向和无向的图。GNN 包括一个迭代过程，来传播节点状态直到平衡；然后是一个神经网络，基于其状态为每个节点生成一个输出；之后，这种思路被 Li 等人（2016）采用并改进，提出在传播步骤中使用门控循环单元（Cho et al.,2014\)。
+图神经网络网络（GNN）首次出现于 Gori 等人（2005）与 Scarselli 等人（2009）的论文，把它作为递归神经网络的泛化形式，能够直接处理更普遍的图类，比如循环图、有向和无向的图。GNN 包括一个迭代过程，来传播节点状态直到平衡；然后是一个神经网络，基于其状态为每个节点生成一个输出；之后，这种思路被 Li 等人（2016）采用并改进，提出在传播步骤中使用门控循环单元（Cho et al.,2014)。
 
 图注意网络（graph attention networks，GATs），这是一种新型的神经网络架构，用于处理图结构化的数据（graph-structured data），利用隐藏的自注意层克服了过去的基于图卷积或其近似的方法的缺点。这些层的节点可以注意近邻节点的特征，通过将这些层堆叠起来，我们可以为不同节点的近邻指定不同的权重，而不需要耗费任何繁重的矩阵计算（比如矩阵求逆），也不需要预先知道图的结构。通过这种方法，我们同时解决了多个基于频谱的图神经网络的关键挑战，并准备将模型应用于归纳问题以及直推问题。
 
@@ -35,21 +35,21 @@ tags:
 
 # GAT Architecture
 
-本文所提出 attentional layer 的输入是一组节点特征，\$h = \\lbrace \\vec\{h\}_\{1\}, \\vec\{h\}_\{2\}, ..., \\vec\{h\}_\{n\} \\rbrace , \\vec\{h\}_\{i\} ∈ R\^\{F\}\$
+本文所提出 attentional layer 的输入是一组节点特征，$h = \lbrace \vec{h}_{1}, \vec{h}_{2}, ..., \vec{h}_{n} \rbrace , \vec{h}_{i} ∈ R^{F}$
 
-其中，N 是节点的个数，F 是每个节点的特征数。该层产生一组新的节点特征，作为其输出，即：\$h' = \\lbrace \\vec\{h'\}_\{1\}, \\vec\{h'\}_\{2\}, ..., \\vec\{h'\}_\{n\} \\rbrace , \\vec\{h'\}_\{i\} ∈ R\^\{F'\}\$
+其中，N 是节点的个数，F 是每个节点的特征数。该层产生一组新的节点特征，作为其输出，即：$h' = \lbrace \vec{h'}_{1}, \vec{h'}_{2}, ..., \vec{h'}_{n} \rbrace , \vec{h'}_{i} ∈ R^{F'}$
 
-为了得到充分表达能力，将输入特征转换为高层特征，至少我们需要一个可学习的线性转换（one learnable linear transformation）。为了达到该目标，在初始步骤，一个共享的线性转换，参数化为 weight matrix，\$W ∈ R\^\{F' \\times F\}\$，应用到每一个节点上。我们然后在每一个节点上，进行 self-attention \--- a shared attentional mechanism α：\$R\^\{F'\} \\times R\^\{F'\} → R\$，计算 attention coefficients:
+为了得到充分表达能力，将输入特征转换为高层特征，至少我们需要一个可学习的线性转换（one learnable linear transformation）。为了达到该目标，在初始步骤，一个共享的线性转换，参数化为 weight matrix，$W ∈ R^{F' \times F}$，应用到每一个节点上。我们然后在每一个节点上，进行 self-attention --- a shared attentional mechanism α：$R^{F'} \times R^{F'} → R$，计算 attention coefficients:
 
-\$\$ e_\{ij\} = α\(W \\vec\{h\}_\{i\}, W \\vec\{h\}_\{j\}\)\$\$
+$$ e_{ij} = α(W \vec{h}_{i}, W \vec{h}_{j})$$
 
 为了使得这些系数能够适用于不同的节点，我们用softmax function对所有邻居结点j进行归一化：
 
-\$\$ α_\{ij\} = \\frac\{ exp\( \\vec\{e\}_\{ij\}\) \}\{ \\sum_\{k∈N_i\}\{exp\( \\vec\{e\}_\{ik\}\)\} \}\$\$
+$$ α_{ij} = \frac{ exp( \vec{e}_{ij}) }{ \sum_{k∈N_i}{exp( \vec{e}_{ik})} }$$
 
-在我们的实验当中，该 attention 机制 α 是一个 single-layer feedforward neural network，参数化为权重向量\$ \\vec\{a\} ∈ R\^\{ 2\{F'\} \}\$，对其全部展开，用 attention 机制算出来的系数，可以表达为：
+在我们的实验当中，该 attention 机制 α 是一个 single-layer feedforward neural network，参数化为权重向量$ \vec{a} ∈ R^{ 2{F'} }$，对其全部展开，用 attention 机制算出来的系数，可以表达为：
 
-\$\$ α_\{ij\} = \\frac\{ exp\( LeakyReLU \(\\vec\{a\}\^\{T\} \[ W \\vec\{h\}_\{i\} || W \\vec\{h\}_\{j\} \]\) \) \}\{ \\sum_\{k∈N_i\}\{exp\( LeakyReLU \(\\vec\{a\}\^\{T\} \[ W \\vec\{h\}_\{i\} || W \\vec\{h\}_\{k\} \]\) \)\} \}\$\$
+$$ α_{ij} = \frac{ exp( LeakyReLU (\vec{a}^{T} [ W \vec{h}_{i} || W \vec{h}_{j} ]) ) }{ \sum_{k∈N_i}{exp( LeakyReLU (\vec{a}^{T} [ W \vec{h}_{i} || W \vec{h}_{k} ]) )} }$$
 
 可以得到最终的每个节点的输出向量：  
 ![](http://39.106.118.77/wp-content/uploads/2019/09/2d82440bc2690de1a3b01aad86bf3c6c.png)

@@ -7,7 +7,7 @@ tags:
 
 CUDA driver version is insufficient for CUDA runtime version 翻译过来就是CUDA的驱动程序版本跟CUDA的运行时版本不匹配
 
-## 1.查看CUDA driver version \(驱动版本\):
+## 1.查看CUDA driver version (驱动版本):
 
 ```bash
 nvidia-smi
@@ -19,7 +19,7 @@ nvidia-smi
 
 显示的驱动程序版本是：384.145
 
-## 2.查看CUDA runtime version \(运行时版本\):
+## 2.查看CUDA runtime version (运行时版本):
 
 ```bash
 conda list cudatoolkit
@@ -36,7 +36,7 @@ python安装的cudatoolkit和cudnn程序包版本是：9.0
 | --- | --- |
 | CUDA 9.1   |   387.xx |
 | CUDA 9.0   |   384.xx |
-| CUDA 8.0   |   375.xx \(GA2\) |
+| CUDA 8.0   |   375.xx (GA2) |
 | CUDA 8.0   |   367.4x |
 | CUDA 7.5   |   352.xx |
 | CUDA 7.0   |   346.xx |
